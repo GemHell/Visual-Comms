@@ -90,11 +90,19 @@ h3 {
 
 
 
-#drop-menu {
+#drop-menus {
 	display: flex;
-	justify-content: space-around
+	align-items: flex-start;
+	justify-content: space-around;
 	text-align: center;
 	padding: 40px;
+}
+
+
+#menu-label {
+	display: flex;
+	flex-direction: column;
+
 }
 
 #resources-list-1 {
