@@ -1,0 +1,113 @@
+Body { 
+	background-color: #1c1b1b;
+	color: white;
+}
+
+a:link {
+	color: rgba(155, 220, 252, 1);
+}
+
+a:visited {
+	color: rgba(155, 220, 252, 1);
+}
+
+a:hover {
+	color: rgba(155, 220, 252, 0.5);
+}
+
+h1 { 
+	
+	font-family:arial;
+}
+
+h2 { 
+	color: white; 
+}
+
+h3 { 
+	color: white;
+}
+
+.container {
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: left;
+}
+
+#section-title {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#section-body {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	text-align: left;
+}
+
+/*Site Header*/
+
+.banner {
+	background-image: url(https://freight.cargo.site/t/original/i/a544a78de93a306d3e35982584d4ec19b0cdc8634b81e9991cc71413b011bbf8/Shoes-on-the-Wire.png); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	padding: 50px;
+	
+}
+
+#title {
+	text-align: center;
+    bmargin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+#sub-title {
+	text-align: left;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	
+}
+
+#Class-Days {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+/*Main Page*/
+
+
+
+#drop-menu {
+	display: flex;
+	justify-content: space-around
+	text-align: center;
+	padding: 40px;
+}
+
+#resources-list-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 20px;
+
+}
+
+/*Weekly Pages*/
+
+#week-title {
+	text-align: center;
+}
+
