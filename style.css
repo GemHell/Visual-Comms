@@ -42,16 +42,21 @@ h5 {
 	text-align: left;
 }
 
+
 #section-title {
 	text-align: center;
 	padding-bottom: 20px;
 }
 
 #section-body {
-	padding-left: 375px;
-	padding-right: 375px;
+	padding-top: 20px;
 	padding-bottom: 40px;
 	text-align: left;
+}
+
+#image {
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 /*Site Header*/
@@ -91,6 +96,8 @@ h5 {
 	margin: auto;
 	background-color: black;
 }
+
+
 
 /*Main Page*/
 
@@ -144,3 +151,9 @@ h5 {
 	border-radius: 20px;
 }
 
+/*Week 2*/
+
+#photo-list {
+	display: flex;
+	flex-direction: column;
+}
