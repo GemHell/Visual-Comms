@@ -55,9 +55,11 @@ h5 {
 }
 
 #image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 20px;
 	padding-bottom: 40px;
-	text-align: center;
 }
 
 /*Site Header*/
