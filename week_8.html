@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A site with all the info you'll need for our class">
+	<title> MEDPL 150: Visual Communication & Interactive Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+   </head>
+	<body>
+	
+<!-- Banner -->
+	 
+	<div class="container" id="banner-holder">
+		<div class="container" id="title">
+	        <h1>MEDPL 150</h1>
+			<h1>Visual Communication & Interactive Design</h1>
+		</div>	
+		
+		<a href="index.html">
+			<div class="banner" id="title-banner">
+				<div class="container" id="sub-title">
+	        		<h2>Spring 2026 <br> HN 432 </h2>
+        		</div>
+			</div>
+		</a>
+	
+		<div class="container" id="Class-Days">
+			<a href="week_1.html"><h5>Week 1</h5></a>
+			<a href="week_2.html"><h5>Week 2</h5></a>
+			<a href="week_3.html"><h5>Week 3</h5></a>
+			<a href="week_4.html"><h5>Week 4</h5></a>
+			<a href="week_5.html"><h5>Week 5</h5></a>
+			<a href="week_6.html"><h5>Week 6</h5></a>
+			<a href="week_7.html"><h5>Week 7</h5></a>
+			<a href="week_8.html"><h5>Week 8</h5></a>
+			<a href="week_9.html"><h5>Week 9</h5></a>
+			<a href="week_10.html"><h5>Week 10</h5></a>
+			<a href="week_11.html"><h5>Week 11</h5></a>
+			<a href="week_12.html"><h5>Week 12</h5></a>
+			<a href="week_13.html"><h5>Week 13</h5></a>
+		    <a href="week_14.html"><h5>Week 14</h5></a>
+            <a href="week_15.html"><h5>Week 15</h5></a>
+            <a href="oral_presentation.html"><h5>Oral Presentation</h5></a>
+		</div>
+	</div>
+
+	<!--Week Header-->
+    <div class="container" id="week-title">
+	    <h1>Week 8: Animation</h1>
+        <h3>Tuesday, March 24th</h3>
+    </div>
+    
+	<!--Gifs-->
+    <div class="container" id="section-body">
+        <h3>What is a Gif?</h3>
+        <p><strong>GIF stands for Graphics Interchange Format.</strong> GIF is a raster file format 
+            designed for relatively basic images that appear mainly on the internet. Each file can 
+            support up to 8 bits per pixel and can contain 256 indexed colors. GIF files also allow 
+            images or frames to be combined, creating basic animations.
+            <br>
+            <em>from <a href="https://www.adobe.com/creativecloud/file-types/image/raster/gif-file.html" target="_blank">Adobe.com</a></em>
+        </p>
+
+        <center>
+            <img src="https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif" alt="a smiles and points to his temple indicating a thought" class="gif" width="400vw">
+       
+        
+            <p>Basically it's a simple animation that often loops.</p>
+         </center>
+    </div>
+    <hr>
+
+    <!--How-To--Section-->
+    <div class="container" id="section-title">
+        <h2>Making an Animated Eye</h2>
+    </div>
+        <div class="container" id="section-body">
+            <h3>The Illustrator to Photoshop to Gif Pipeline</h3>
+            
+            <p>To make an animated gif, we will be using both Adobe Illustrator and Photoshop.  The process is as follows:</p>
+            
+            <h3>In Illustrator</h3>
+            <ol>
+                <li>Open your eye illustration</li>
+                <li>Make sure the eyelid is on a separate layer from the rest of the image.</li>
+                <li>Go to file > export > export as</li>
+                    <ul><li>change the format to Photoshop (psd)</li></ul>
+                <li>Export</li>
+            </ol>
+            
+            <h3>In Photoshop</h3>
+            <ol>
+                <li>Open the exported PSD file</li>
+                    <ul><li>The layers from your Illustrator file should be preserved.</li></ul>
+                <li>Duplicate the eyelid layer to create separate frames. For each layer, use the move or resize tool to move the lid slightly down. 4 or five layers should do.</li>
+                    <ul><li>Repeat this step in reverse to animate the lid opening again.</li></ul>
+                <li>Go to window > timeline. (the timeline panel should appear at the bottom of your workspace)</li>
+                <li>Select all of your layers. (shift click)</li>
+                <li>In the timeline panel, click the dropdown and select “create frame animation”</li>
+                <li>In the timeline panel menu, select “make frames from layers”</li>
+                <li>Select your background layer. (This will most likely be your eyeball and pupil)</li>
+                <li>In the timeline panel, click the dropdown and select “Match layer across frames”</li>
+                    <ul><li>You will most likely have to delete your first frame after doing this</li></ul>
+                <li>Set the delay time for each frame to 0.1 seconds (or whatever you like). This is the down arrow at the bottom of each frame.</li>
+                    <ul><li>You can do this all at once by selecting multiple frames and adjusting the delay time together. (shift click)</li></ul>
+                <li>Set the looping option to “forever”</li>
+                <li>Press play to view your gif!</li>
+                <li>Make adjustments to delay time as needed.</li>
+            </ol>
+
+            <h3>Exporting Your Gif</h3>
+            <ol>
+                <li>Go to file > export > save for web</li>
+                <li>Change the format to GIF</li>
+                <li>Set colors to lowest number that preserves your color scheme. (This saves file space)</li>
+                    <ul><li>You can monitor file space in the bottom left corner.</li></ul>
+                <li>You can select "Transparency" if you want a transparent background. If not, the background will be solid.</li>
+                <li>Make sure convert to sRGB is selected for posting to the web.</li>
+                <li>Make sure the looping option is set to “forever”</li>
+                <li>Click Save</li>
+        <center>
+	        <img src="images/eyeball.gif" alt="animated gif of an eyeball blinking" width="400vw">
+	    </center>
+
+            <h3>Adding Your Gif to Your Website</h3>
+            <p>To add your gif to your website, you can use the same code you would use to add a static image:</p>
+            <pre>
+                &lt;img src="images/eyeball.gif" alt="animated gif of an eyeball blinking" width="400vw">
+            </pre>
+            <p>Just make sure to change the file path and alt text to match your gif.</p>
+        </div>
+
+        <hr>
+
+	
+ 	<!-- Homework -->
+     <div class="container" id="section-title">
+        <h2>Homework #6: Animated GIFs</h2>
+        <h3>Due before class 4/14</h3>
+     </div>
+
+     <div class="container" id="section-body">
+        <p>Login to LinkedIn Learning: <a href="https://www.hunter.cuny.edu/hunterworks/linkedin-learning/" target="_blank">https://www.hunter.cuny.edu/hunterworks/linkedin-learning/</a>
+        <p>Access the course: <a href="https://www.linkedin.com/learning/photoshop-2025-essential-training/welcome-to-photoshop-essential-training-6?u=2319458" target="_blank">https://www.linkedin.com/learning/photoshop-2025-essential-training/welcome-to-photoshop-essential-training-6?u=2319458</a></p>
+        <h4>What to watch:</h4>
+		<ul>
+            <li>Ch. 11 Retouching and Removing Distracting elements (1 – 3)</li>
+            <li>Ch. 16 Essential Transformation (1, 3)</li>
+            <li>Ch. 25 Animating Images</li>
+            <br>
+            <li>Photoshop Puppet Warp: (if you want to get fancy)<a href="https://www.youtube.com/watch?v=xRGt7byhS50" target="_blank">https://www.youtube.com/watch?v=xRGt7byhS50</a></li>
+        </ul>
+        <p>Beyond the tutorials above, these technical references may be helpful:</p>
+        <ul>
+            <li><a href="https://helpx.adobe.com/photoshop/using/creating-frame-animations.html" target="_blank">“Create frame animations”</a></li>
+            <li><a href="https://helpx.adobe.com/photoshop/using/video-animation-overview.html#switch_animation_modes" target="_blank">“Animation Panel Overview”</a></li>
+            <li><a href="https://helpx.adobe.com/photoshop/how-to/make-animated-gif.html" target="">“How to Make an Animated GIF”</a></li>
+        </ul>
+
+        <h3>Deliverables:</h3>
+        <ul>
+            <li>Two animated .gifs made in Adobe Illustrator and Photoshop</li>
+        </ul>
+
+        <h4>GIF 1: Blink</h4>
+        <ul>
+            <li>Complete the exercise started in your lab section that uses the eye drawing created with Adobe Illustrator from homework #6 to make the drawing blink.</li>
+            <li>Copy your eye from Illustrator into Photoshop and follow the steps in the examples above to create the blink.</li>
+            <li>Experiment with the number of frames and fps to get the speed of the blink you like.</li>
+        </ul>
+
+        <h4>GIF 2: Cut Up Cinema</h4>
+        <ul>
+            <li>Create photographs of yourself or friend(s). Be sure to photograph against a high-contrast solid background to make it easier to “pull off” the figure.</li>
+            <li>In Photoshop cut the person out of the image to create a digital puppet.</li>
+            <li>Use Puppet Warp Tool to animate the cropped photography</li>
+            <li>Duplicate your person into various frames</li>
+            <li>In each frame create variations of the person using the Puppet Warp tool</li>
+            <li>Open the Timeline panel and create a “Frame Animation”</li>
+            <li>Present each layer on different frames to create an animation of you or a friend in various positions</li>
+            <li>Add background layers, more people or text… Have fun with it!</li>
+        </ul>
+
+        <p>Post both gifs to your website.</p>
+
+	<hr>
+	<!--return button-->
+    <div class="container" id="section-title">
+        <a href="index.html"><h5>Back to Main Page</h5></a>
+    </div>
+
+    </body>
+</html>
