@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A site with all the info you'll need for our class">
+	<title> MEDPL 150: Visual Communication & Interactive Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+   </head>
+	<body>
+	
+<!-- Banner -->
+	 
+	<div class="container" id="banner-holder">
+		<div class="container" id="title">
+	        <h1>MEDPL 150</h1>
+			<h1>Visual Communication & Interactive Design</h1>
+		</div>	
+		
+		<a href="index.html">
+			<div class="banner" id="title-banner">
+				<div class="container" id="sub-title">
+	        		<h2>Spring 2026 <br> HN 432 </h2>
+        		</div>
+			</div>
+		</a>
+	
+		<div class="container" id="Class-Days">
+			<a href="week_1.html"><h5>Week 1</h5></a>
+			<a href="week_2.html"><h5>Week 2</h5></a>
+			<a href="week_3.html"><h5>Week 3</h5></a>
+			<a href="week_4.html"><h5>Week 4</h5></a>
+			<a href="week_5.html"><h5>Week 5</h5></a>
+			<a href="week_6.html"><h5>Week 6</h5></a>
+			<a href="week_7.html"><h5>Week 7</h5></a>
+			<a href="week_8.html"><h5>Week 8</h5></a>
+			<a href="week_9.html"><h5>Week 9</h5></a>
+			<a href="week_10.html"><h5>Week 10</h5></a>
+			<a href="week_11.html"><h5>Week 11</h5></a>
+			<a href="week_12.html"><h5>Week 12</h5></a>
+			<a href="week_13.html"><h5>Week 13</h5></a>
+			<a href="week_14.html"><h5>Week 14</h5></a>
+			<a href="week_15.html"><h5>Week 15</h5></a>
+			<a href="oral_presentation.html"><h5>Oral Presentation</h5></a>
+		</div>
+	</div>
+
+	<!--Week Header-->
+    <div class="container" id="week-title">
+	    <h1>History and Theory of Games</h1>
+	    <h2>Tuesday, March 31st</h2>
+    </div>
+
+    <!--Section body with instructions and code block-->
+    <div class="container" id="section-body">
+        <h2>Instructions</h2>
+        <p>For a more in depth overview of CSS fundamentals go to <a href="https://www.htmldog.com/guides/css/" target="_blank">htmldog.com/guides/css/</a>. Work through the beginner tutorials, and then the "Background Images" section in the Intermediate Tutorial.</p>
+        
+
+        <p>Additionally (or alternativelty), you can use the CSS snippet below to configure your page's look and feel. Create a file named <code>style.css</code> and paste this code inside. You can then adjust colors, typography, spacing, and layout variables as needed.</p>
+
+        <div class="container"><pre><code><span class="css-comment">
+/* This is a comment. It is a way for developers to leave notes for themselves and others who are working on the code. It doesn't affect the code or show up on your site. Below I have left comments to describe what certain CSS selectors and properties do */
+
+/* Full page background */</span>
+<span class="css-selector">body</span> {
+    <span class="css-property">background-color</span>: <span class="css-value">#f5f5f5</span>;
+    <span class="css-property">background-image</span>: <span class="css-value">url('images/background.jpg')</span>;
+    <span class="css-property">background-repeat</span>: <span class="css-value">no-repeat</span>;
+    <span class="css-property">background-size</span>: <span class="css-value">cover</span>;
+    <span class="css-property">background-position</span>: <span class="css-value">center</span>;
+    <span class="css-property">color</span>: <span class="css-value">#1a1a1a</span>; <span class="css-comment">/* Default text color */</span>
+    <span class="css-property">margin</span>: <span class="css-value">0</span>;
+    <span class="css-property">padding</span>: <span class="css-value">0</span>;
+    <span class="css-property">font-family</span>: <span class="css-value">'Arial', sans-serif</span>;
+    <span class="css-property">font-size</span>: <span class="css-value">16px</span>;
+}
+
+<span class="css-comment">/* Link colors */</span>
+<span class="css-selector">a</span> {
+    <span class="css-property">color</span>: <span class="css-value">#0073e6</span>; <span class="css-comment">/* Link color */</span>
+    <span class="css-property">text-decoration</span>: <span class="css-value">none</span>;
+}
+
+<span class="css-comment">/* Changes text color and adds underline on mouse hover */</span>
+<span class="css-selector">a:hover</span> {
+    <span class="css-property">color</span>: <span class="css-value">#005bb5</span>;
+    <span class="css-property">text-decoration</span>: <span class="css-value">underline</span>;
+}
+
+<span class="css-comment">/* Heading styles */</span>
+<span class="css-selector">h1</span> {
+    <span class="css-property">color</span>: <span class="css-value">#111111</span>; <span class="css-comment">/* Heading color */</span>
+    <span class="css-property">font-size</span>: <span class="css-value">36px</span>;
+    <span class="css-property">margin</span>: <span class="css-value">24px 0 8px</span>;
+}
+<span class="css-selector">h2</span> {
+    <span class="css-property">color</span>: <span class="css-value">#333333</span>; <span class="css-comment">/* Subheading color */</span>
+    <span class="css-property">font-size</span>: <span class="css-value">28px</span>;
+    <span class="css-property">margin</span>: <span class="css-value">16px 0 8px</span>;
+}</code>
+            </pre>
+        </div>
+    
+    
+    <p>Now, in your html, right below the <code>&lt;title&gt;</code> tag (but above the closing <code>&lt;/head&gt;</code> tag) link your CSS file to your HTML page by adding this line:</p>
+    <div class="container"><pre><code>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</code></pre></div>
+    <p>Note: you will need to add this to all of your site's pages in order for it to style your entire site.</p>
+
+    <h2>An Example of a Very Simple Hypertext Story</h2>
+
+    <p>Here is a very simple hypertext story built with HTML. Each page is a separate HTML file linked with <code>&lt;a&gt;</code> tags:</p>
+
+    <div class="container"><pre><code><span class="css-comment">&lt;!-- index.html (or story-start.html) --&gt;</span>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;The Room&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;The Room&lt;/h1&gt;
+    &lt;p&gt;You wake up in a room after having a strange dream that you cannot remember.&lt;/p&gt;
+    &lt;p&gt;There is a door on the right and a door on the left.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;What one do you choose?&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="right-door.html"&gt;The door on the right&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="left-door.html"&gt;The door on the left&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+    <p>Each choice link points to a different HTML file (right-door.html, left-door.html, etc.) which contains the next scene and its own set of choices, creating a branching narrative.</p>
+
+    </div>
+
+
+
+	<hr>
+    <!-- Homework -->
+     <div class="container" id="section-title">
+        <h2>Homework #8a: Interactive Story Assignment, Part 1</h2>
+        <h3>Due: 4/21</h3>
+     </div>
+
+     <div class="container" id="section-body">
+        <h3>Required Viewing:</h3>
+        <p>From <a href="https://www.linkedin.com/learning/photoshop-2025-essential-training/welcome-to-photoshop-essential-training-6?u=2319458" target="_blank">"Photoshop 2025 Essential Training"</a>:</p>
+        <ul>
+            <li>Ch. 12 Generative AI</li>
+        </ul>
+        <p>From <a href="https://www.linkedin.com/learning/illustrator-2025-essential-training/learn-the-essentials-of-adobe-illustrator?u=2319458" target="_blank">"Illustrator 2025 Essential Training"</a>:</p>
+        <ul>
+            <li>Ch. 19 Generative Content</li>
+            <li>Ch. 20 Artboards</li>
+        </ul>
+
+        <h3>Resources:</h3>
+        <ul>
+            <li><a href="https://youtu.be/2CKbKbaEulI?si=REmKks-DBJ0NbgN1" target="_blank">Generate Entire AI Images in Photoshop with Adobe Firefly</a></li>
+            <li>Adobe Firefly: <a href="https://www.adobe.com/products/firefly.html" target="_blank">https://www.adobe.com/products/firefly.html</a></li>
+        </ul>
+
+        <h3>Assignment Overview:</h3>
+        <p>This homework assignment, to create a web-based non-linear story, is in two parts and counts as two homework assignments; we will be looking for a highly resolved work that builds on all of the technical and aesthetic material we've covered in class so far. For this assignment, you can use photography, illustration, montage, or simple text to create a narrative with multiple story paths that can be navigated using hyperlinks. <strong>80% of the imagery and all of the text used must be your own original content (including the Adobe generative AI tools listed above).</strong></p>
+
+        <h3>Steps:</h3>
+        <ol>
+            <li>Map out your narrative, using Illustrator or simply a pen and paper.</li>
+            <li>Develop the imagery/text for each page.</li>
+            <li>You may create a new Sites folder for this assignment or create a series of new HTML pages dedicated to this project.</li>
+            <li>Make sure your homepage – index.html links to the interactive story and that all story links work as you expect.</li>
+        </ol>
+
+        <h3>Story Requirements:</h3>
+        <ul>
+            <li>There must be at least two possible endings and there must be multiple ways to get to each one.</li>
+        </ul>
+
+        <h3>Part 1 Submission Requirements:</h3>
+        <p>Part 1 of the submission should include:</p>
+        <ul>
+            <li>A brief (one or two paragraph) description of your story (What is the premise? Are there characters? Where does it take place? What are the kinds of choices you will provide to your user?)</li>
+            <li>A map of your narrative with the forking paths of decisions</li>
+            <li>One image of a possible scene/space for your story</li>
+        </ul>
+
+        <h3>Tip: Location-Based Story Idea</h3>
+        <p>If you are having trouble coming up with a story, you could make it location-specific. Define one or more locations in NYC that you find interesting. Document the location(s) with several photographs. Write a brief story about the location(s) and give it alternate paths. The story may document something that happened at the location or something more fantastic. Give your user choices to move through the location(s), perhaps something different happens in the story or to your user based on the choices.</p>
+     </div>
+
+	<hr>
+	<!--return button-->
+    <div class="container" id="section-title">
+        <a href="index.html"><h5>Back to Main Page</h5></a>
+    </div>
+
+    </body>
+</html>

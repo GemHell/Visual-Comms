@@ -65,6 +65,18 @@ h5 {
 	padding-bottom: 40px;
 }
 
+pre {
+	background-color: antiquewhite;
+	color: black;
+	font-size: 14px;
+	padding: 20px;
+	border-radius: 10px;
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+
+
 /*Site Header*/
 
 .banner {
@@ -176,4 +188,21 @@ h5 {
 #photo-list {
 	display: flex;
 	flex-direction: column;
+}
+
+/* ===== CSS Syntax Highlighting Design Tokens ===== */
+.css-comment {
+	color: #2d5016; /* Dark green */
+}
+
+.css-selector {
+	color: #0066cc; /* Blue */
+}
+
+.css-property {
+	color: #8b0000; /* Dark red */
+}
+
+.css-value {
+	color: #000000; /* Black */
 }
