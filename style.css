@@ -66,13 +66,14 @@ h5 {
 }
 
 pre {
-	background-color: antiquewhite;
-	color: black;
+	background-color: #f5f5f5;
+	color: #1a1a1a;
 	font-size: 14px;
 	padding: 20px;
 	border-radius: 10px;
 	overflow: auto;
 	white-space: pre-wrap;
+	border: 1px solid #ccc;
 }
 
 
