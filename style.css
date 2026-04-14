@@ -78,6 +78,7 @@ pre {
 
 
 
+
 /*Site Header*/
 
 .banner {
@@ -128,6 +129,11 @@ pre {
 	justify-content: space-around;
 	margin: auto;
 	background-color: black;
+}
+
+#week-link {
+	margin: auto;
+
 }
 
 
@@ -206,4 +212,7 @@ pre {
 
 .css-value {
 	color: #000000; /* Black */
+}
+
+
 }
