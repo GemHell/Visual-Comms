@@ -16,6 +16,18 @@
 			<h1>Visual Communication & Interactive Design</h1>
 		</div>	
 		
+		<div class="hamburger-menu" id="hamburger-menu">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+		
+		<div class="container" id="Class-Days">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+		
 		<a href="index.html">
 			<div class="banner" id="title-banner">
 				<div class="container" id="sub-title">
@@ -144,7 +156,31 @@
    
 
     <div class="container" id="section-title">
-        <a href="index.html"><h5>Back to Main Page</h5></a>
+        <div class="hamburger-menu" id="hamburger-menu">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+		
+		<div class="container" id="Class-Days">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+		
+		<a href="index.html"><h5>Back to Main Page</h5></a>
+    </div>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const classDays = document.getElementById('Class-Days');
+
+        hamburgerMenu.addEventListener('click', function() {
+            classDays.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    </script>
     </div>
     </body>
 </html>

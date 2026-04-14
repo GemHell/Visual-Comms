@@ -24,6 +24,19 @@
 			</div>
 		</a>
 	
+		<!-- Hamburger Menu Button -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+		
+		<div class="container" id="Class-Days">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
+	
 		<div class="container" id="Class-Days">
 			<a href="week_1.html"><h5>Week 1</h5></a>
 			<a href="week_2.html"><h5>Week 2</h5></a>
@@ -188,6 +201,17 @@
     <div class="container" id="section-title">
         <a href="index.html"><h5>Back to Main Page</h5></a>
     </div>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const classDays = document.getElementById('Class-Days');
+
+        hamburgerMenu.addEventListener('click', function() {
+            classDays.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    </script>
 
     </body>
 </html>
