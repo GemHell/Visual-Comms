@@ -2,6 +2,7 @@
 <html>
    <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A site with all the info you'll need for our class">
 	<title> MEDPL 150: Visual Communication & Interactive Design</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,13 +16,6 @@
 	        <h1>MEDPL 150</h1>
 			<h1>Visual Communication & Interactive Design</h1>
 		</div>
-
-		<div class="hamburger-menu" id="hamburger-menu">
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-		</div>
-
 		<a href="index.html">
 			<div class="banner" id="title-banner">
 				<div class="container" id="sub-title">
@@ -29,6 +23,12 @@
         		</div>
 			</div>
 		</a>
+		<!-- Hamburger Menu Button -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+			<div class="hamburger-line"></div>
+		</div>
 
 		<div class="container" id="Class-Days">
 			<a href="week_1.html"><h5>Week 1</h5></a>
@@ -214,7 +214,7 @@
 		<h4>absolute</h4>
 		<p>The element is removed from normal flow and positioned relative to its nearest positioned ancestor. This is how we place the speech bubble at a specific spot over the image.</p>
 		<div class="container"><pre><code><span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>;
+    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
     <span class="css-property">top</span>: <span class="css-value">20px</span>;  <span class="css-comment">/* 20px from the top of .image-container */</span>
     <span class="css-property">left</span>: <span class="css-value">20px</span>; <span class="css-comment">/* 20px from the left of .image-container */</span>
 }</code></pre></div>
@@ -259,7 +259,7 @@
 }
 
 <span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>;
+    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
     <span class="css-property">z-index</span>: <span class="css-value">2</span>; <span class="css-comment">/* bubble sits in front of the image */</span>
 }</code></pre></div>
 
@@ -286,7 +286,7 @@
 }
 
 <span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>;
+    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
     <span class="css-property">z-index</span>: <span class="css-value">2</span>; <span class="css-comment">/* bubble on layer 2, in front of the image */</span>
     <span class="css-property">top</span>: <span class="css-value">20px</span>;
     <span class="css-property">left</span>: <span class="css-value">20px</span>;
@@ -363,13 +363,7 @@
 
 	<!--return button-->
     <div class="container" id="section-title">
-        <div class="hamburger-menu" id="hamburger-menu">
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-		</div>
-
-		<a href="index.html"><h5>Back to Main Page</h5></a>
+<a href="index.html"><h5>Back to Main Page</h5></a>
     </div>
 
     <script>
