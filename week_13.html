@@ -5,68 +5,116 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A site with all the info you'll need for our class">
 	<title> MEDPL 150: Visual Communication & Interactive Design</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
    </head>
 	<body>
-
+	
 <!-- Banner -->
-
-	<div class="container" id="banner-holder">
-		<div class="container" id="title">
-	        <h1>MEDPL 150</h1>
-			<h1>Visual Communication & Interactive Design</h1>
-		</div>
+	 
+	<div id="banner-holder">
 		<a href="index.html">
 			<div class="banner" id="title-banner">
-				<div class="container" id="sub-title">
-	        		<h2>Spring 2026 <br> HN 432 </h2>
-        		</div>
 			</div>
 		</a>
+	
 		<!-- Hamburger Menu Button -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-		</div>
+		<button class="hamburger-menu" id="hamburger-menu" type="button" aria-controls="Class-Days" aria-expanded="false" aria-label="Toggle navigation menu">
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+		</button>
 
 		<div class="container" id="Class-Days">
-			<a href="week_1.html"><h5>Week 1</h5></a>
-			<a href="week_2.html"><h5>Week 2</h5></a>
-			<a href="week_3.html"><h5>Week 3</h5></a>
-			<a href="week_4.html"><h5>Week 4</h5></a>
-			<a href="week_5.html"><h5>Week 5</h5></a>
-			<a href="week_6.html"><h5>Week 6</h5></a>
-			<a href="week_7.html"><h5>Week 7</h5></a>
-			<a href="week_8.html"><h5>Week 8</h5></a>
-			<a href="week_9.html"><h5>Week 9</h5></a>
-			<a href="week_10.html"><h5>Week 10</h5></a>
-			<a href="week_11.html"><h5>Week 11</h5></a>
-			<a href="week_12.html"><h5>Week 12</h5></a>
-			<a href="week_13.html"><h5>Week 13</h5></a>
-			<a href="week_14.html"><h5>Week 14</h5></a>
-			<a href="week_15.html"><h5>Week 15</h5></a>
+			<a href="week_1.html">Week 1</a>
+			<a href="week_2.html">Week 2</a>
+			<a href="week_3.html">Week 3</a>
+			<a href="week_4.html">Week 4</a>
+			<a href="week_5.html">Week 5</a>
+			<a href="week_6.html">Week 6</a>
+			<a href="week_7.html">Week 7</a>
+			<a href="week_8.html">Week 8</a>
+			<a href="week_9.html">Week 9</a>
+			<a href="week_10.html">Week 10</a>
+			<a href="week_11.html">Week 11</a>
+			<a href="week_12.html">Week 12</a>
+			<a href="week_13.html">Week 13</a>
+			<a href="week_14.html">Week 14</a>
 			<div class="nav-break"></div>
-				<a href="oral_presentation.html"><h5>Oral Presentation</h5></a>
+				<a href="oral_presentation.html">Oral Presentation</a>
 		</div>
+	</div>
 	</div>
 
 	<!--Week Header-->
     <div class="container" id="week-title">
-	    <h1>Week 13: Interaction Design & UX</h1>
-		<h2>Tuesday, April 28th</h2>
-    </div>
+	    <h1>Week 13: Affordances of Digital Media</h1>
+	</div>
+    
+	<hr>
+
+	<!-- HTML Target Attribute -->
+	<div class="container section-title">
+		<h2>More About Links</h2>
+	</div>
+
+	<div class="container section-body">
+		<h3>HTML Target Attribute</h3>
+		<p>The <code>target="_blank"</code> attribute in HTML links is used to specify where a linked document should open. When you set <code>target="_blank"</code>, the link will open in a new browser tab or window, leaving your current page open. This is useful when you want to direct users to external resources without losing their place on your site.</p>
+
+		<p>For example:</p>
+		<div class="container"><pre><code>&lt;<span class="css-selector">a</span> <span class="css-property">href</span>=<span class="css-value">"https://example.com"</span> <span class="css-property">target</span>=<span class="css-value">"_blank"</span>&gt;Visit Example&lt;/<span class="css-selector">a</span>&gt;</code></pre></div>
+
+		<p>For more information about the target attribute got to the <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">W3Schools reference on the target attribute</a>.</p>
+
+		<h3>CSS Hover Pseudo-Class</h3>
+		<p>The CSS <code>:hover</code> pseudo-class is used to style elements when a user hovers their cursor over them. This is a great way to provide visual feedback to users, making your site more interactive and responsive.</p>
+
+		<p>For example, you can change the color of a link when someone hovers over it:</p>
+		<div class="container"><pre><code><span class="css-selector">a:hover</span> {
+    <span class="css-property">color</span>: <span class="css-value">#ff0000</span>;
+    <span class="css-property">text-decoration</span>: <span class="css-value">underline</span>;
+}</code></pre></div>
+
+		<p>For more information about the hover pseudo-class and how to use it, visit the <a href="https://www.w3schools.com/cssref/sel_hover.php" target="_blank">W3Schools reference on the CSS :hover selector</a>.</p>
+	
+
+	<p>More about Psuedo-classes: <a href="https://www.w3schools.com/cssref/css_ref_pseudo_classes.php" target="_blank">W3Schools reference on CSS pseudo-classes</a></p>
+	</div>
+	<hr>
+
+	<!-- Homework -->
+     <div class="container section-title">
+        <h2>Homework 9: Interactive Story Assignment (continued)</h2>
+
+     </div>
+
+     <div class="container section-body">
+        <p><a href="https://www.cuny.edu/cuny-login/" target="_blank">Go to the Brightspace assignment.</a></p>
+     </div>
 
 	<hr>
 
+	<!-- Tip: not part of a graded homework assignment -->
+     <div class="container section-title">
+        <h2>Creating Link Hotspots on Images</h2>
+
+     </div>
+
+     <div class="container section-body">
+        <p>For the Interactive story assignment, you can create link hotspots on images using <a href="https://www.image-map.net/" target="_blank">HTML Image Map</a>.</p>
+     </div>
+
+	<hr>
+
+	<!-- Interaction Design & UX Content from old Week 13 -->
 	<!-- Intro -->
-	 <div class="container" id="section-title">
+	 <div class="container section-title">
 		<h1>Creating Reusable UI Elements</h1>
 		<h2>The Speech Bubble Example</h2>
 		</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>Today we're building a simple speech bubble but you can use all the principles we cover to create other reusable UI elements.</p>
-		<div id="image">
+		<div class="image">
 			<img src="images/speech-bubble.png" alt="Example of a CSS speech bubble overlaid on a scene image" width="75%">
 		</div>
 		<p>To get there, we'll cover:</p>
@@ -84,10 +132,10 @@
 	<hr>
 
 	<!-- The Div Element -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>The <code>&lt;div&gt;</code> Element</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>A <code>&lt;div&gt;</code> is a generic, block-level container. It has no visual appearance of its own: no color, no border, no size. Its job is to wrap content so you can target and style it as a unit with CSS.</p>
 		<p>Our speech bubble starts as a bare div with text inside:</p>
 
@@ -103,10 +151,10 @@
 	<hr>
 
 	<!-- CSS Selectors -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>CSS Selectors: Type, Class, and ID</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>CSS <strong>selectors</strong> tell the browser which HTML elements to style. There are three fundamental types.</p>
 
 		<h3>Type Selectors</h3>
@@ -169,10 +217,10 @@
 	<hr>
 
 	<!-- Box Model -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>The Box Model</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>Every HTML element, including our speech bubble div, is treated by the browser as a rectangular box. The <strong>CSS Box Model</strong> describes the layers that make up that box, from the inside out:</p>
 		<ul>
 			<li><strong>Content</strong>: the text inside the bubble</li>
@@ -194,120 +242,20 @@
 	<hr>
 
 	<!-- Positioning -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>Positioning Elements with CSS</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>The CSS <code>position</code> property controls how an element is placed in the document. To float our speech bubble over a scene image, we need to understand two key values: <code>relative</code> and <code>absolute</code>.</p>
-
-		<h3>The Five Position Values</h3>
-
-		<h4>static (default)</h4>
-		<p>Every element is <code>static</code> by default. It flows in normal document order and ignores <code>top</code>, <code>left</code>, <code>right</code>, and <code>bottom</code>.</p>
-
-		<h4>relative</h4>
-		<p>The element stays in normal flow but can be nudged from its original position. We use this on the scene container to establish it as the reference point for the bubble.</p>
-		<div class="container"><pre><code><span class="css-selector">.image-container</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>; <span class="css-comment">/* makes this the anchor for absolutely-positioned children */</span>
-}</code></pre></div>
-
-		<h4>absolute</h4>
-		<p>The element is removed from normal flow and positioned relative to its nearest positioned ancestor. This is how we place the speech bubble at a specific spot over the image.</p>
-		<div class="container"><pre><code><span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
-    <span class="css-property">top</span>: <span class="css-value">20px</span>;  <span class="css-comment">/* 20px from the top of .image-container */</span>
-    <span class="css-property">left</span>: <span class="css-value">20px</span>; <span class="css-comment">/* 20px from the left of .image-container */</span>
-}</code></pre></div>
-
-		<h4>fixed</h4>
-		<p>Positioned relative to the browser window, stays in place while scrolling. Useful for persistent UI like a navigation bar or a status bar in your story.</p>
-		<div class="container"><pre><code><span class="css-selector">.status-bar</span> {
-    <span class="css-property">position</span>: <span class="css-value">fixed</span>;
-    <span class="css-property">top</span>: <span class="css-value">0</span>;
-    <span class="css-property">width</span>: <span class="css-value">100%</span>;
-}</code></pre></div>
-
-		<h4>sticky</h4>
-		<p>A hybrid of relative and fixed. Scrolls with the page until it hits the specified offset, then locks in place.</p>
-		<div class="container"><pre><code><span class="css-selector">.chapter-title</span> {
-    <span class="css-property">position</span>: <span class="css-value">sticky</span>;
-    <span class="css-property">top</span>: <span class="css-value">0</span>;
-}</code></pre></div>
-
-		<p>For further reading and examples:</p>
-		<ul>
-			<li><a href="https://www.geeksforgeeks.org/css/css-positioning-elements/" target="_blank">CSS Positioning Elements (GeeksforGeeks)</a></li>
-			<li><a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Positioning Content (Shay Howe)</a></li>
-			<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning" target="_blank">Positioning (MDN Web Docs)</a></li>
-		</ul>
-	</div>
-
-	<hr>
-
-	<!-- Z-Index -->
-	<div class="container" id="section-title">
-		<h2>Z-Index</h2>
-	</div>
-	<div class="container" id="section-body">
-		<p>When elements overlap, the browser needs to know which one sits on top. The <code>z-index</code> property controls this stacking order. Think of it as layers: a higher number means closer to the viewer.</p>
-
-		<p><strong>Important:</strong> <code>z-index</code> only works on elements that have a <code>position</code> value other than <code>static</code>.</p>
-
-		<div class="container"><pre><code><span class="css-selector">.scene-image</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>;
-    <span class="css-property">z-index</span>: <span class="css-value">1</span>; <span class="css-comment">/* image sits behind */</span>
-}
-
-<span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
-    <span class="css-property">z-index</span>: <span class="css-value">2</span>; <span class="css-comment">/* bubble sits in front of the image */</span>
-}</code></pre></div>
-
-		<p>For more on how z-index layers work: <a href="https://www.geeksforgeeks.org/css/how-does-z-index-layer-work/" target="_blank">How Does Z-Index Layer Work? (GeeksforGeeks)</a></p>
-	</div>
-
-	<hr>
-
-	<!-- Text Over Image -->
-	<div class="container" id="section-title">
-		<h2>Placing Text Over an Image</h2>
-	</div>
-	<div class="container" id="section-body">
-		<p>Now we can put it together. The scene container wraps both the image and the speech bubble. With <code>position: relative</code> on the container, the bubble can be placed anywhere over the image using z-index to ensure it sits on top.</p>
-
-		<div class="container"><pre><code><span class="css-selector">.image-container</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>; <span class="css-comment">/* reference point for the bubble */</span>
-}
-
-<span class="css-selector">.image-container img</span> {
-    <span class="css-property">position</span>: <span class="css-value">relative</span>;
-    <span class="css-property">z-index</span>: <span class="css-value">1</span>; <span class="css-comment">/* image on layer 1 */</span>
-    <span class="css-property">width</span>: <span class="css-value">100%</span>;
-}
-
-<span class="css-selector">.speech-bubble</span> {
-    <span class="css-property">position</span>: <span class="css-value">absolute</span>;
-    <span class="css-property">z-index</span>: <span class="css-value">2</span>; <span class="css-comment">/* bubble on layer 2, in front of the image */</span>
-    <span class="css-property">top</span>: <span class="css-value">20px</span>;
-    <span class="css-property">left</span>: <span class="css-value">20px</span>;
-}</code></pre></div>
-
-		<p>In your HTML:</p>
-		<div class="container"><pre><code>&lt;<span class="css-selector">div</span> <span class="css-property">class</span>=<span class="css-value">"image-container"</span>&gt;
-    &lt;<span class="css-selector">img</span> <span class="css-property">src</span>=<span class="css-value">"images/scene.jpg"</span> <span class="css-property">alt</span>=<span class="css-value">"A forest path at night"</span>&gt;
-    &lt;<span class="css-selector">div</span> <span class="css-property">class</span>=<span class="css-value">"speech-bubble"</span>&gt;I've never seen this path before...&lt;/<span class="css-selector">div</span>&gt;
-&lt;/<span class="css-selector">div</span>&gt;</code></pre></div>
-
-		<p>For a full walkthrough: <a href="https://www.geeksforgeeks.org/css/how-to-place-text-over-an-image-using-css/" target="_blank">How to Place Text Over an Image Using CSS (GeeksforGeeks)</a></p>
 	</div>
 
 	<hr>
 
 	<!-- Applying to Interactive Story -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>Creating the Speech Bubble</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>Now to combine the div, the class selector, the box model, positioning, and z-index, all together.</p>
 
 		<h3>The HTML</h3>
@@ -341,10 +289,10 @@
 	<hr>
 
 	<!-- Story Elements Checklist -->
-	<div class="container" id="section-title">
+	<div class="container section-title">
 		<h2>Reusable Class Ideas for Your Interactive Story</h2>
 	</div>
-	<div class="container" id="section-body">
+	<div class="container section-body">
 		<p>As you build your story, think about which elements repeat across pages. Each one is a candidate for a reusable class. Define it once in your stylesheet and apply it wherever you need it.</p>
 
 		<ul>
@@ -360,10 +308,8 @@
 	</div>
 
 	<hr>
-
-	<!--return button-->
-    <div class="container" id="section-title">
-<a href="index.html"><h5>Back to Main Page</h5></a>
+    <div class="container section-title">
+<a href="index.html">Back to Main Page</a>
     </div>
 
     <script>
@@ -372,11 +318,12 @@
         const classDays = document.getElementById('Class-Days');
 
         hamburgerMenu.addEventListener('click', function() {
+            const isExpanded = hamburgerMenu.getAttribute('aria-expanded') === 'true';
             classDays.classList.toggle('active');
             hamburgerMenu.classList.toggle('active');
+            hamburgerMenu.setAttribute('aria-expanded', String(!isExpanded));
         });
     </script>
-    </div>
 
     </body>
 </html>

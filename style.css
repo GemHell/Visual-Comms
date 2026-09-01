@@ -1,6 +1,6 @@
 body {
-	background-color: #1c1b1b;
-	color: white;
+	background-color: #ffffff;
+	color: black;
 	font-size: 15pt;
 	line-height: 1.6em;
 	margin: 0;
@@ -8,17 +8,17 @@ body {
 }
 
 a:link {
-	color: rgba(155, 220, 252, 1);
+	color: #0256B1;
 	font-size: 15pt;	
 	line-height: 1.6em;
 }
 
 a:visited {
-	color: rgba(155, 220, 252, 1);
+	color: #6D94BD;
 }
 
 a:hover {
-	color: rgba(155, 220, 252, 0.5);
+	color: #53a5fca3;
 }
 
 h1 { 
@@ -27,15 +27,28 @@ h1 {
 }
 
 h2 { 
-	color: white; 
+	color: black; 
+	text-align: center;
 }
 
 h3 { 
-	color: white;
+	color: black;
 }
 
 h5 {
 	font-size: 1.1em;
+}
+
+.site-kicker {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.site-title {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0;
 }
 
 .container {
@@ -45,13 +58,15 @@ h5 {
 }
 
 
-#section-title {
+.section-title {
 	text-align: center;
-	padding-bottom: 20px;
-	
 }
 
-#section-body {
+.section-subtitle {
+	text-align: center;
+}
+
+.section-body {
 	padding-top: 20px;
 	padding-bottom: 40px;
 	margin-left: 10vw;
@@ -59,7 +74,7 @@ h5 {
 	text-align: left;
 }
 
-#image {
+.image {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -89,7 +104,8 @@ pre {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: clamp(40px, 12vw, 150px);
-	mask-image: linear-gradient( transparent 5%, black 50%, transparent 95% );
+	border-radius: 15px;
+	mask-image: linear-gradient( transparent 2%, black 10%, black 90%, transparent 98% );
 	position: relative;
 }
 
@@ -97,7 +113,7 @@ pre {
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -109,7 +125,7 @@ pre {
     margin: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	width: 100%;
 }
 
@@ -138,7 +154,14 @@ pre {
 	align-items: flex-start;
 	justify-content: space-around;
 	margin: auto;
-	background-color: black;
+	Border: 2px solid #8e8d8d;
+	Border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+#Class-Days a {
+	font-size: .9em;
+	text-decoration: none;
 }
 
 .nav-break {
@@ -166,17 +189,17 @@ pre {
 }
 
 
-#menu-label {
+.menu-label {
 	display: flex;
 	flex-direction: column;
 
 }
 
-#menu1 {
+.menu1 {
 	margin: auto;
 }
 
-#class-websites {
+.class-websites {
 	color: black;
 	font-size: 15pt;
 }
@@ -268,15 +291,23 @@ pre {
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
+	border: none;
 	padding: 10px;
 	background-color: #333;
 	border-radius: 5px;
 	margin: 10px;
 	width: 30px;
 	height: 30px;
+	font: inherit;
+	color: inherit;
 	justify-content: center;
 	align-items: center;
 	align-self: flex-start;
+}
+
+.hamburger-menu:focus-visible {
+	outline: 3px solid #9bdcfc;
+	outline-offset: 3px;
 }
 
 .hamburger-line {

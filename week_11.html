@@ -11,119 +11,114 @@
 	
 <!-- Banner -->
 	 
-	<div class="container" id="banner-holder">
-		<div class="container" id="title">
-	        <h1>MEDPL 150</h1>
-			<h1>Visual Communication & Interactive Design</h1>
-		</div>	
-		
+	<div id="banner-holder">
 		<a href="index.html">
 			<div class="banner" id="title-banner">
-				<div class="container" id="sub-title">
-	        		<h2>Spring 2026 <br> HN 432 </h2>
-        		</div>
 			</div>
 		</a>
-	
 		<!-- Hamburger Menu Button -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-			<div class="hamburger-line"></div>
-		</div>
+		<button class="hamburger-menu" id="hamburger-menu" type="button" aria-controls="Class-Days" aria-expanded="false" aria-label="Toggle navigation menu">
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+		</button>
 
 		<div class="container" id="Class-Days">
-			<a href="week_1.html"><h5>Week 1</h5></a>
-			<a href="week_2.html"><h5>Week 2</h5></a>
-			<a href="week_3.html"><h5>Week 3</h5></a>
-			<a href="week_4.html"><h5>Week 4</h5></a>
-			<a href="week_5.html"><h5>Week 5</h5></a>
-			<a href="week_6.html"><h5>Week 6</h5></a>
-			<a href="week_7.html"><h5>Week 7</h5></a>
-			<a href="week_8.html"><h5>Week 8</h5></a>
-			<a href="week_9.html"><h5>Week 9</h5></a>
-			<a href="week_10.html"><h5>Week 10</h5></a>
-			<a href="week_11.html"><h5>Week 11</h5></a>
-			<a href="week_12.html"><h5>Week 12</h5></a>
-			<a href="week_13.html"><h5>Week 13</h5></a>
-			<a href="week_14.html"><h5>Week 14</h5></a>
-			<a href="week_15.html"><h5>Week 15</h5></a>
+			<a href="week_1.html">Week 1</a>
+			<a href="week_2.html">Week 2</a>
+			<a href="week_3.html">Week 3</a>
+			<a href="week_4.html">Week 4</a>
+			<a href="week_5.html">Week 5</a>
+			<a href="week_6.html">Week 6</a>
+			<a href="week_7.html">Week 7</a>
+			<a href="week_8.html">Week 8</a>
+			<a href="week_9.html">Week 9</a>
+			<a href="week_10.html">Week 10</a>
+			<a href="week_11.html">Week 11</a>
+			<a href="week_12.html">Week 12</a>
+			<a href="week_13.html">Week 13</a>
+			<a href="week_14.html">Week 14</a>
 			<div class="nav-break"></div>
-				<a href="oral_presentation.html"><h5>Oral Presentation</h5></a>
+				<a href="oral_presentation.html">Oral Presentation</a>
 		</div>
 	</div>
-	</div>
 
-	<!--Week Header-->
+ 	<!--Week Header-->
     <div class="container" id="week-title">
-	    <h1>Week 11: Affordances of Digital Media</h1>
-		<h2>Tuesday, April 14th</h2>
+	    <h1>Week 11: Intro to CSS</h1>
     </div>
     
 	<hr>
 
-	<!-- HTML Target Attribute -->
-	<div class="container" id="section-title">
-		<h2>More About Links</h2>
-	</div>
+     <!-- Intro to CSS -->
+    <div class="container section-title">
+        <h2>What is CSS? (From <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">W3Schools.com)</a></h2>
+    </div>
 
-	<div class="container" id="section-body">
-		<h3>HTML Target Attribute</h3>
-		<p>The <code>target="_blank"</code> attribute in HTML links is used to specify where a linked document should open. When you set <code>target="_blank"</code>, the link will open in a new browser tab or window, leaving your current page open. This is useful when you want to direct users to external resources without losing their place on your site.</p>
+    <div class="container section-body">
 
-		<p>For example:</p>
-		<div class="container"><pre><code>&lt;<span class="css-selector">a</span> <span class="css-property">href</span>=<span class="css-value">"https://example.com"</span> <span class="css-property">target</span>=<span class="css-value">"_blank"</span>&gt;Visit Example&lt;/<span class="css-selector">a</span>&gt;</code></pre></div>
+        <p>CSS is the language we use to style a Web page.</p>
+        <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+        </ul>
+    </div>
 
-		<p>For more information about the target attribute got to the <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">W3Schools reference on the target attribute</a>.</p>
+    <hr>
 
-		<h3>CSS Hover Pseudo-Class</h3>
-		<p>The CSS <code>:hover</code> pseudo-class is used to style elements when a user hovers their cursor over them. This is a great way to provide visual feedback to users, making your site more interactive and responsive.</p>
+    <div class="container section-title">
+        <h2>Getting Started with CSS Basics (HTML Dog)</h2>
+        <a href="http://www.htmldog.com/" target="_blank"><img src="http://www.htmldog.com/badge1.gif" alt="HTML, CSS, and JavaScript tutorials, references, and articles" width="200"></a>
+    </div>
 
-		<p>For example, you can change the color of a link when someone hovers over it:</p>
-		<div class="container"><pre><code><span class="css-selector">a:hover</span> {
-    <span class="css-property">color</span>: <span class="css-value">#ff0000</span>;
-    <span class="css-property">text-decoration</span>: <span class="css-value">underline</span>;
-}</code></pre></div>
-
-		<p>For more information about the hover pseudo-class and how to use it, visit the <a href="https://www.w3schools.com/cssref/sel_hover.php" target="_blank">W3Schools reference on the CSS :hover selector</a>.</p>
-	
-
-	<p>More about Psuedo-classes: <a href="https://www.w3schools.com/cssref/css_ref_pseudo_classes.php" target="_blank">W3Schools reference on CSS pseudo-classes</a></p>
-	</div>
-	<hr>
+    <div class="container section-body">
+        <ul>
+            <li>Go to <a href="https://www.htmldog.com/guides/css/beginner/" target="_blank">https://www.htmldog.com/guides/css/beginner/</a></li>
+            <li>In the CSS Beginner Tutorial read from “Applying CSS” through “Putting it All Together” (all 7 sections, “Next Page” is linked near bottom of each page)</li>
+        </ul>
+        
+        <h3>More CSS Resources</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS tutorials.</a> This site is great for looking up specific elements and attributes.</li>
+            <li>CSS examples: <a href="http://www.csszengarden.com/" target="_blank">http://www.csszengarden.com/</a></li>
+            <li>CSS Intro Course ch. 1 Getting Started: <a href="https://www.linkedin.com/learning/css-essential-training-22688362" target="_blank">https://www.linkedin.com/learning/css-essential-training-22688362</a></li>
+        </ul>
+    </div>
+           
+    <hr>
 
 	<!-- Homework -->
-     <div class="container" id="section-title">
-        <h2>Homework #8b: Interactive Story Assignment, Part 2</h2>
-        <h3>Due: 5/5</h3>
-     </div>
+	<div class="container section-title">
+		<h2>Homework 8: Online Portfolio Assignment (continued)</h2>
+	</div>
 
-     <div class="container" id="section-body">
-        <p>Part 2 should include all other aspects of the work; it will be a functioning website following the description above with the URL provided to your Lab Instructor. Try to apply concepts from the UI/UX lecture to your interface design.</p>
-        
-        <h3>Creating Link Hotspots on Images:</h3>
-        <p>For the Interactive story assignment, you can create link hotspots on images using <a href="https://www.image-map.net/" target="_blank">HTML Image Map</a>.</p>
-     </div>
+	<div class="container section-body">
+		<p><a href="https://www.cuny.edu/cuny-login/" target="_blank">Go to the Brightspace assignment.</a></p>
+	</div>
 
 	<hr>
 
-     <div class="container" id="section-title">
-        <h2>Reading and Written Response #3</h2>
-        <h3>Due: 5/5 for Tu Labs, 5/6 for W Labs, 5/7 for Th Labs</h3>
-     </div>
 
-     <div class="container" id="section-body">
-        <h3>Reading Assignment:</h3>
-        <p>"Graphic Novel: Motherhood in Crisis" by Laurence Ivil, Alicia Prager and Saidu Bah</p>
-        
-        <h3>Assignment:</h3>
-        <p>500-word reflection</p>
-     </div>
 
-	<hr>
+
+
+
+
+
+
+		<hr>
+
+
+
+
+
+
+		<hr>
 	<!--return button-->
-    <div class="container" id="section-title">
-<a href="index.html"><h5>Back to Main Page</h5></a>
+    <div class="container section-title">
+<a href="index.html">Back to Main Page</a>
     </div>
 
     <script>
@@ -132,10 +127,13 @@
         const classDays = document.getElementById('Class-Days');
 
         hamburgerMenu.addEventListener('click', function() {
+            const isExpanded = hamburgerMenu.getAttribute('aria-expanded') === 'true';
             classDays.classList.toggle('active');
             hamburgerMenu.classList.toggle('active');
+            hamburgerMenu.setAttribute('aria-expanded', String(!isExpanded));
         });
     </script>
+    </div>
 
     </body>
 </html>
