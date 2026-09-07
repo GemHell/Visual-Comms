@@ -148,9 +148,9 @@ pre {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-around;
-	margin: auto;
 	Border: 2px solid #8e8d8d;
 	Border-radius: 10px;
+	margin: 20px;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -342,7 +342,7 @@ pre {
 		width: auto;
 		background-color: transparent;
 		padding: 0;
-		margin: 0;
+		margin: 20px;
 		box-shadow: none;
 	}
 	
