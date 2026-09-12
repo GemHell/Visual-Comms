@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
 	background-color: #ffffff;
 	color: black;
@@ -5,6 +9,9 @@ body {
 	line-height: 1.6em;
 	margin: 0;
 	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-wrap: break-word; /* prevent long URLs from forcing horizontal scroll */
 }
 
 a:link {
@@ -88,6 +95,11 @@ pre {
 	border: 1px solid #ccc;
 }
 
+img {
+	max-width: 100%; /* prevent vw-sized images from overflowing padded containers */
+	height: auto;
+}
+
 
 
 
@@ -146,11 +158,11 @@ pre {
 #Class-Days {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: flex-end;
 	justify-content: space-around;
-	Border: 2px solid #8e8d8d;
+	Border: 1px solid #8e8d8d;
 	Border-radius: 10px;
-	margin: 20px;
+	margin: 10px;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -166,7 +178,6 @@ pre {
 
 #week-link {
 	margin: auto;
-
 }
 
 
@@ -286,18 +297,18 @@ pre {
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
-	border: none;
-	padding: 10px;
-	background-color: #333;
+	border: 1px solid #999999;
 	border-radius: 5px;
+	padding: 10px;
+	background-color: #cccccc;
 	margin: 10px;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	font: inherit;
 	color: inherit;
 	justify-content: center;
 	align-items: center;
-	align-self: flex-start;
+	align-self: flex-end;
 }
 
 .hamburger-menu:focus-visible {
@@ -314,7 +325,7 @@ pre {
 }
 
 .hamburger-menu.active .hamburger-line:nth-child(1) {
-	transform: rotate(45deg) translate(5px, 5px);
+	transform: translate(0, 6px) rotate(45deg);
 }
 
 .hamburger-menu.active .hamburger-line:nth-child(2) {
@@ -322,7 +333,7 @@ pre {
 }
 
 .hamburger-menu.active .hamburger-line:nth-child(3) {
-	transform: rotate(-45deg) translate(7px, -6px);
+	transform: translate(0, -6px) rotate(-45deg);
 }
 
 /* Desktop styles - show banner and hamburger in a row */
@@ -342,7 +353,7 @@ pre {
 		width: auto;
 		background-color: transparent;
 		padding: 0;
-		margin: 20px;
+		margin: 10px;
 		box-shadow: none;
 	}
 	
@@ -357,7 +368,7 @@ pre {
 @media (max-width: 768px) {
 	#drop-menus {
 		flex-direction: column;
-		align-items: center;
+		align-items: right;
 	}
 
 	.hamburger-menu {
@@ -367,10 +378,11 @@ pre {
 	#Class-Days {
 		display: none;
 		flex-direction: column;
-		width: 100%;
-		background-color: #333;
+		width: fit-content;
+		background-color: #cccccc;
 		padding: 20px;
-		margin-top: 10px;
+		margin-top: 5px;
+		align-self: flex-end;
 	}
 	
 	#Class-Days.active {
@@ -385,6 +397,7 @@ pre {
 	
 	#Class-Days a:hover {
 		background-color: #555;
+		border-radius: 5px;
 	}
 
 	.nav-break {
