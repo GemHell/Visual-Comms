@@ -50,6 +50,27 @@
 	    <h1>Week 10: Introduction to Web Development</h1>
     </div>
     <hr>
+    <!-- HTML Vocabulary -->
+    <div class="container section-title">
+        <h2>HTML Vocabulary</h2>
+    </div>
+    <div class="container section-body">
+        <ul>
+            <li><strong>HTML</strong> &ndash; HyperText Markup Language. The standard language used to structure content on web pages. It tells the browser what each piece of content is (a heading, a paragraph, an image, a link, etc.).</li>
+            <li><strong>Tags</strong> &ndash; Keywords wrapped in angle brackets, like <code>&lt;p&gt;</code>, that mark where a piece of content begins and ends. Most tags come in pairs: an opening tag (<code>&lt;p&gt;</code>) and a closing tag with a slash (<code>&lt;/p&gt;</code>).</li>
+            <li><strong>Elements</strong> &ndash; The complete unit made up of an opening tag, the content inside it, and a closing tag. For example, <code>&lt;p&gt;Hello!&lt;/p&gt;</code> is a paragraph element. Some elements, like <code>&lt;img&gt;</code>, have no closing tag.</li>
+            <li><strong>Repository</strong> &ndash; A folder that holds all the files for a project (HTML, CSS, images, etc.) along with a history of every change made to them. Repositories are often stored online on sites like GitHub so they can be shared and published.</li>
+        </ul>
+    </div>
+
+    <hr>
+    <!-- Intro to HTML -->
+    <div class="container section-title">
+        <h2>Introduction to HTML</h2>
+        <iframe style="width: 80vw; height: 45vw;" src="https://www.youtube.com/embed/KuLYc6aT9ZU?si=Ivbd1CGG9bV4eDjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr>
     <!-- Setting up Github Pages-->
     <div class="container section-title">
         <h2>Setting Up Your Github Account</h2>
@@ -73,14 +94,6 @@
     </div>
     <hr>
 
-    <!-- Intro to HTML -->
-    <div class="container section-title">
-        <h2>Introduction to HTML</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KuLYc6aT9ZU?si=Ivbd1CGG9bV4eDjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <hr>
-
     <div class="container section-title">
         <h2>Getting Started with HTML Basics (HTML Dog)</h2>
         <a href="http://www.htmldog.com/" target="_blank"><img src="http://www.htmldog.com/badge1.gif" alt="HTML, CSS, and JavaScript tutorials, references, and articles" width="200"></a>
@@ -98,25 +111,63 @@
             <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorials.</a> This site is great for looking up specific elements and attributes.</li>
             
     </div>
-           
+
     <hr>
-    
-    <!-- CSS -->
+
+    <!-- HTML Boilerplate -->
     <div class="container section-title">
-        <h2>CSS</h2>
-        <h3>(Optional for Week 1)</h3>
-        <div class="container" id="css-image">
-            <a href="https://www.htmldog.com/guides/css/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo" width="200"></a>
-        </div>
+        <h2>HTML Boilerplate</h2>
     </div>
     <div class="container section-body">
-        <ul>
-            <li><a href="https://www.htmldog.com/guides/css/" target="_blank">HTML Dog CSS Guide</a></li>
-            <li>Practice arranging the contents of a div: <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggie</a></li>
-        </ul>
+        <p>Every HTML page starts with the same basic structure. Copy this into a new file to get started.</p>
+        <div class="container"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Website Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    This is my first web page
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
     </div>
 
     <hr>
+
+    <!-- HTML Examples -->
+    <div class="container section-title">
+        <h2>HTML Examples</h2>
+    </div>
+    <div class="container section-body">
+        <p>Below are some basic HTML tags you'll use to build your pages, along with an example of each.</p>
+
+        <h3>Paragraph</h3>
+        <p>Use the <code>&lt;p&gt;</code> tag to create a paragraph of text.</p>
+        <div class="container"><pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre></div>
+
+        <h3>Heading</h3>
+        <p>Use heading tags (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>) to create titles and section headings, with <code>&lt;h1&gt;</code> being the largest/most important.</p>
+        <div class="container"><pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre></div>
+
+        <h3>Bold</h3>
+        <p>Use the <code>&lt;strong&gt;</code> tag to make text bold and emphasize its importance.</p>
+        <div class="container"><pre><code>&lt;strong&gt;This text is bold&lt;/strong&gt;</code></pre></div>
+
+        <h3>Italic</h3>
+        <p>Use the <code>&lt;em&gt;</code> tag to italicize text and emphasize it.</p>
+        <div class="container"><pre><code>&lt;em&gt;This text is italic&lt;/em&gt;</code></pre></div>
+
+        <h3>Link</h3>
+        <p>Use the <code>&lt;a&gt;</code> tag with an <code>href</code> attribute to create a hyperlink to another page.</p>
+        <div class="container"><pre><code>&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;</code></pre></div>
+
+        <h3>Image</h3>
+        <p>Use the <code>&lt;img&gt;</code> tag with <code>src</code> and <code>alt</code> attributes to display an image on your page.</p>
+        <div class="container"><pre><code>&lt;img src="images/photo.jpg" alt="Description of photo"&gt;</code></pre></div>
+    </div>
+
+    <hr>
+    
+ 
 
     <!-- Homework -->
      <div class="container section-title">

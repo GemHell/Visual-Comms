@@ -16,15 +16,13 @@ body {
 
 a:link {
 	color: #0256B1;
-	font-size: 15pt;	
-	line-height: 1.6em;
 }
+
 a:hover {
 	color: #53a5fca3;
 }
 
 h1 { 
-	
 	font-family:arial;
 }
 
@@ -99,9 +97,6 @@ img {
 	max-width: 100%; /* prevent vw-sized images from overflowing padded containers */
 	height: auto;
 }
-
-
-
 
 /*Site Header*/
 
@@ -356,6 +351,19 @@ img {
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+	body {
+		font-size: 12pt;
+		line-height: 1.6em;
+	}
+
+	.section-body {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	text-align: left;
+	}
+
 	#drop-menus {
 		flex-direction: column;
 		align-items: right;
@@ -377,11 +385,27 @@ img {
 	
 	#Class-Days.active {
 		display: flex;
+		flex-wrap: nowrap; /* override the base rule's flex-wrap: wrap, which was spilling overflowing links into a second column instead of scrolling */
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		bottom: 20px;
+		left: 20px;
+		width: auto;
+		height: auto;
+		margin: 0;
+		align-self: auto; /* fixed-position elements are still flex items of #banner-holder; this override keeps the top/bottom inset height calculation from being ignored */
+		justify-content: flex-start; /* centering overflowing content clips items past the top of the scroll area in some browsers; start-aligning keeps every item reachable by scrolling */
+		overflow-y: auto;
+		z-index: 1000;
 	}
 	
 	#Class-Days a {
 		margin: 10px 0;
 		padding: 10px;
+		width: 100%;
+		box-sizing: border-box;
+		text-align:center;
 		border-bottom: 1px solid #555;
 	}
 	
