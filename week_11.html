@@ -64,6 +64,61 @@
             <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
             <li>External stylesheets are stored in CSS files</li>
         </ul>
+
+        <h3>CSS Definitions</h3>
+        <p>A CSS rule is made of a <strong>selector</strong> followed by curly braces <code>{ }</code> that hold one or more <strong>property</strong>: <strong>value</strong> pairs. Each pair ends with a semicolon <code>;</code>.</p>
+        <div class="container"><pre><code><span class="css-selector">selector</span> {
+    <span class="css-property">property</span>: <span class="css-value">value</span>;
+}</code></pre></div>
+        <ul>
+            <li><strong>Selectors:</strong> Specify which HTML elements a rule applies to. For example, <code>p</code> targets every paragraph and <code>h1</code> targets every main heading.</li>
+            <li><strong>Properties:</strong> The aspect of the element you want to change, such as <code>color</code>, <code>font-size</code>, or <code>background-color</code>.</li>
+            <li><strong>Values:</strong> The setting you give a property, such as <code>red</code>, <code>16px</code>, or <code>center</code>. A colon <code>:</code> separates the property from its value.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Creating your Style Sheet -->
+    <div class="container section-title">
+        <h2>Creating your Style Sheet</h2>
+    </div>
+    <div class="container section-body">
+        <p>Create a new text file and name it <code>style.css</code>. Save it in the same folder as your <code>index.html</code> file. Copy this template into it to get started.</p>
+        <div class="container"><pre><code><span class="css-selector">body</span> {
+    <span class="css-property">background-color</span>: <span class="css-value">white</span>;
+    <span class="css-property">color</span>: <span class="css-value">black</span>;
+    <span class="css-property">font-size</span>: <span class="css-value">16px</span>;
+    <span class="css-property">line-height</span>: <span class="css-value">1.5</span>;
+    <span class="css-property">font-family</span>: <span class="css-value">Arial, Helvetica, sans-serif</span>;
+}
+
+<span class="css-selector">h1</span> {
+    <span class="css-property">font-size</span>: <span class="css-value">32px</span>;
+}
+
+<span class="css-selector">p</span> {
+    <span class="css-property">font-size</span>: <span class="css-value">16px</span>;
+    <span class="css-property">font-style</span>: <span class="css-value">normal</span>;
+}
+
+<span class="css-selector">a</span> {
+    <span class="css-property">color</span>: <span class="css-value">blue</span>;
+    <span class="css-property">text-decoration</span>: <span class="css-value">none</span>;
+}</code></pre></div>
+
+        <h3>Linking your Style Sheet to your index.html File</h3>
+        <p>Add a <code>&lt;link&gt;</code> tag inside the <code>&lt;head&gt;</code> of your <code>index.html</code> file. The <code>href</code> is the name of your CSS file.</p>
+        <div class="container"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Website Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    This is my first web page
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
     </div>
 
     <hr>
@@ -91,31 +146,13 @@
 
 	<!-- Homework -->
 	<div class="container section-title">
-		<h2>Homework 8: Online Portfolio Assignment (continued)</h2>
+		<h2>Homework: Online Portfolio Assignment (continued)</h2>
 	</div>
 
 	<div class="container section-body">
 		<p><a href="https://www.cuny.edu/cuny-login/" target="_blank">Go to the Brightspace assignment.</a></p>
 	</div>
-
 	<hr>
-
-
-
-
-
-
-
-
-
-		<hr>
-
-
-
-
-
-
-		<hr>
 	<!--return button-->
     <div class="container section-title">
 <a href="index.html">Back to Main Page</a>
