@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A site with all the info you'll need for our class">
+	<title> MEDPL 150: Visual Communication & Interactive Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+   </head>
+	<body>
+	
+<!-- Banner -->
+	 
+	<div id="banner-holder">
+		<a href="index.html">
+			<div class="banner" id="title-banner">
+			</div>
+		</a>
+	
+		<!-- Hamburger Menu Button -->
+		<button class="hamburger-menu" id="hamburger-menu" type="button" aria-controls="Class-Days" aria-expanded="false" aria-label="Toggle navigation menu">
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+			<span class="hamburger-line" aria-hidden="true"></span>
+		</button>
+
+		<div class="container" id="Class-Days">
+			<a href="week_1.html">Week 1</a>
+			<a href="week_2.html">Week 2</a>
+			<a href="week_3.html">Week 3</a>
+			<a href="week_4.html">Week 4</a>
+			<a href="week_5.html">Week 5</a>
+			<a href="week_6.html">Week 6</a>
+			<a href="week_7.html">Week 7</a>
+			<a href="week_8.html">Week 8</a>
+			<a href="week_9.html">Week 9</a>
+			<a href="week_10.html">Week 10</a>
+			<a href="week_11.html">Week 11</a>
+			<a href="week_12.html">Week 12</a>
+			<a href="week_13.html">Week 13</a>
+			<a href="week_14.html">Week 14</a>
+			<div class="nav-break"></div>
+				<a href="oral_presentation.html">Oral Presentation</a>
+		</div>
+	</div>
+
+	<!--Week Header-->
+    <div class="container" id="week-title">
+	    <h1>Week 12: Combining CSS and HTML</h1>
+	</div>
+
+	<hr>
+
+	<!-- Intro -->
+	 <div class="container section-title">
+		<h2>Reusable UI Elements with divs, classes, and ids</h2>
+		</div>
+	<div class="container section-body">
+		<p>Today we're building a simple dialogue box but you can use all the principles we cover to create other reusable UI elements.</p>
+		<div class="image">
+			<div class="dialogue-box">I've never seen this path before...</div>
+		</div>
+		<p>To get there, we'll cover:</p>
+			<ul>
+				<li>CSS selectors, classes, and ids</li>
+				<li>Div elements in HTML</li>
+				<li>The div box model</li>
+			</ul>
+			
+		<p>The dialogue box pulls all of them together in a single, reusable class.</p>
+	</div>
+
+	<hr>
+
+	<!-- The Div Element -->
+	<div class="container section-title">
+		<h2>The <code>&lt;div&gt;</code> Element</h2>
+	</div>
+	<div class="container section-body">
+		<p>A <code>&lt;div&gt;</code> is a generic, block-level container. It has no visual appearance of its own: no color, no border, no size. Its job is to wrap content so you can target and style it as a unit with CSS.</p>
+		<p>Our dialogue box starts as a bare div with text inside:</p>
+
+		<div class="container"><pre><code>&lt;<span class="css-selector">div</span>&gt;I've never seen this path before...&lt;/<span class="css-selector">div</span>&gt;</code></pre></div>
+
+		<p>Right now it looks like plain text. To style it, we need a way to connect it the our CSS rules, which means giving it a class.</p>
+
+		<div class="container"><pre><code>&lt;<span class="css-selector">div</span> <span class="css-property">class</span>=<span class="css-value">"dialogue-box"</span>&gt;I've never seen this path before...&lt;/<span class="css-selector">div</span>&gt;</code></pre></div>
+
+		<p>Now CSS can find it. The class is the hook that connects the HTML to the stylesheet.</p>
+	</div>
+
+	<hr>
+
+	<!-- CSS Selectors -->
+	<div class="container section-title">
+		<h2>CSS Selectors: Type, Class, and ID</h2>
+	</div>
+	<div class="container section-body">
+		<p>CSS <strong>selectors</strong> tell the browser which HTML elements to style. There are three fundamental types.</p>
+
+		<h3>Type Selectors</h3>
+		<p>A type selector targets every element of a given tag. A rule for <code>div</code> applies to every div on the page, useful for broad defaults but too broad for a specific element like our box.</p>
+		<div class="container"><pre class="css-code"><code><span class="css-selector">div</span> {
+    <span class="css-property">font-size</span>: <span class="css-value">60px</span>;
+}</code></pre></div>
+
+		<h3>Class Selectors</h3>
+		<p>A class selector targets any element with a matching <code>class</code> attribute. In CSS, class names are preceded by a period <code>.</code> — this is how we'll style the dialogue box. Write the rule once, apply it to as many divs as you need.</p>
+		<div class="container"><pre class="css-code"><code><span class="css-selector">.dialogue-box</span> {
+    <span class="css-property">background-color</span>: <span class="css-value">rgb(194, 194, 255)</span>;
+    <span class="css-property">border-radius</span>: <span class="css-value">60px</span>;
+    <span class="css-property">padding</span>: <span class="css-value">12px 16px</span>;
+}</code></pre></div>
+
+		<p>In your HTML:</p>
+		<div class="container"><pre><code>&lt;<span class="css-selector">div</span> <span class="css-property">class</span>=<span class="css-value">"dialogue-box"</span>&gt;I've never seen this path before...&lt;/<span class="css-selector">div</span>&gt;
+&lt;<span class="css-selector">div</span> <span class="css-property">class</span>=<span class="css-value">"dialogue-box"</span>&gt;We should turn back.&lt;/<span class="css-selector">div</span>&gt;</code></pre></div>
+
+		<h3>ID Selectors</h3>
+		<p>An ID selector targets one unique element. IDs are preceded by <code>#</code> and should only appear once per page. Use them for page-specific overrides. For example, positioning a box differently on one particular scene.</p>
+		<div class="container"><pre class="css-code"><code><span class="css-selector">#scene-3-box</span> {
+    <span class="css-property">position</span>: <span class="css-value">relative</span>;
+    <span class="css-property">top</span>: <span class="css-value">40px</span>;
+    <span class="css-property">left</span>: <span class="css-value">60px</span>;
+}</code></pre></div>
+
+		<h3>Quick Reference</h3>
+		<div style="overflow-x: auto;">
+		<table class="quick-ref-table">
+			<tr>
+				<th>Selector</th>
+				<th>Syntax (how to type it)</th>
+				<th>Targets</th>
+			</tr>
+			<tr>
+				<td>Type</td>
+				<td><code>div { }</code></td>
+				<td>All <code>&lt;div&gt;</code> elements</td>
+			</tr>
+			<tr>
+				<td>Class</td>
+				<td><code>.dialogue-box { }</code></td>
+				<td>Any element with <code>class="dialogue-box"</code></td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td><code>#scene-3-box { }</code></td>
+				<td>The one element with <code>id="scene-3-box"</code></td>
+			</tr>
+		</table>
+		</div>
+
+	</div>
+
+	<hr>
+
+	<!-- Box Model -->
+	<div class="container section-title">
+		<h2>The Box Model</h2>
+	</div>
+	<div class="container section-body">
+		<p>Every HTML element, including our dialogue box div, is treated by the browser as a rectangular box. The <strong>CSS Box Model</strong> describes the layers that make up that box, from the inside out:</p>
+		<center><img src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/box-model-1.jpg?q=50&fit=crop&w=750&dpr=1.5"></center>
+		<ul>
+			<li><strong>Content</strong>: the text inside the box. (The default value for divs is "auto" which wraps the div to the content)</li>
+			<li><strong>Padding</strong>: the space between the text and the div's border</li>
+			<li><strong>Border</strong>: the line separating the inside and outside of the div</li>
+			<li><strong>Margin</strong>: the space separating the border from neighboring elements</li>
+		</ul>
+
+		<div class="container"><pre class="css-code"><code><span class="css-selector">.dialogue-box</span> {
+    <span class="css-property">padding</span>: <span class="css-value">12px 16px</span>;
+    <span class="css-property">border</span>: <span class="css-value">2px solid #333333</span>;
+    <span class="css-property">border-radius</span>: <span class="css-value">60px</span>;
+    <span class="css-property">margin</span>: <span class="css-value">10px</span>;
+}</code></pre></div>
+
+		<p>You can play around with these properties in this interactive box model demo at <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel" target="_blank">w3schools.com: CSS Box Model</a>.</p>
+	</div>
+
+	<hr>
+
+	<!-- Snippets -->
+	<div class="container section-title">
+		<h2>Helpful Snippets to Copy</h2>
+	</div>
+	<div class="container section-body">
+		<h3>Change Link Appearance on Hover</h3>
+		<p>The CSS <code>:hover</code> pseudo-class is used to style elements when a user hovers their cursor over them. This is a great way to provide visual feedback to users, making your site more interactive and responsive.</p>
+
+		<p>For example, you can change the color of a link when someone hovers over it:</p>
+		<div class="container"><pre class="css-code"><code><span class="css-selector">a:hover</span> {
+    <span class="css-property">color</span>: <span class="css-value">#ff0000</span>;
+    <span class="css-property">text-decoration</span>: <span class="css-value">underline</span>;
+}</code></pre></div>
+
+		<p>For more information about the hover pseudo-class and how to use it, visit the <a href="https://www.w3schools.com/cssref/sel_hover.php" target="_blank">W3Schools reference on the CSS :hover selector</a>.</p>
+	
+
+	<p>More about pseudo-classes: <a href="https://www.w3schools.com/cssref/css_ref_pseudo_classes.php" target="_blank">W3Schools reference on CSS pseudo-classes</a></p>
+
+		<h3>Open Links in a New Window</h3>
+		<p>The <code>target="_blank"</code> attribute in HTML links is used to specify where a linked document should open. When you set <code>target="_blank"</code>, the link will open in a new browser tab or window, leaving your current page open. This is useful when you want to direct users to external resources without losing their place on your site.</p>
+
+		<p>For example:</p>
+		<div class="container"><pre><code>&lt;<span class="css-selector">a</span> <span class="css-property">href</span>=<span class="css-value">"https://example.com"</span> <span class="css-property">target</span>=<span class="css-value">"_blank"</span>&gt;Visit Example&lt;/<span class="css-selector">a</span>&gt;</code></pre></div>
+
+		<p>For more information about the target attribute go to the <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">W3Schools reference on the target attribute</a>.</p>
+	</div>
+
+	<hr>
+
+	<!-- Tip: not part of a graded homework assignment -->
+     <div class="container section-title">
+        <h2>Creating Link Hotspots on Images</h2>
+
+     </div>
+
+     <div class="container section-body">
+        <p>For the Interactive story assignment, you can use this <a href="https://www.image-map.net/" target="_blank">HTML image map tool</a> to create link hotspots on images.</p>
+     </div>
+
+	<hr>
+
+    <!-- Accessibility Checker-->
+     <div class="container section-title">
+    <h2>Accessibility Checker</h2>
+        </div>
+        <div class="container section-body">
+    <p>Use the Contrast Checker at <a href="https://webaim.org/resources/contrastchecker/" target="_blank">https://webaim.org/resources/contrastchecker/</a> to check the accessibility of your web page's color scheme.</p>
+        </div>
+
+	<hr>
+	<!--return button-->
+    <div class="container section-title">
+<a href="index.html">Back to Main Page</a>
+    </div>
+
+    <script src="nav.js"></script>
+
+    </body>
+</html>

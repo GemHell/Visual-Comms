@@ -93,6 +93,11 @@ pre {
 	border: 1px solid #ccc;
 }
 
+/* CSS code examples (HTML examples keep the default pre color) */
+pre.css-code {
+	background-color: #e3f1fc;
+}
+
 img {
 	max-width: 100%; /* prevent vw-sized images from overflowing padded containers */
 	height: auto;
@@ -250,7 +255,8 @@ img {
 }
 
 .quick-ref-table td {
-	background-color: #2e2e2e;
+	background-color: #eee6b9; /* matches code blocks */
+	color: #1a1a1a;
 }
 
 /*Week 2*/
@@ -258,6 +264,16 @@ img {
 #photo-list {
 	display: flex;
 	flex-direction: column;
+}
+
+/*Week 12*/
+
+.dialogue-box {
+    background-color: rgb(194, 194, 255);
+	border: 2px solid #333333;
+	border-radius: 60px;
+    margin: 10px;
+	padding: 12px 16px;
 }
 
 /* ===== CSS Syntax Highlighting Design Tokens ===== */
